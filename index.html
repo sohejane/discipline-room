@@ -1,8 +1,9 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discipline Room –</title>
+  <title>Discipline Room</title>
   <style>
     body {
       background-color: #000;
@@ -58,8 +59,11 @@
     }
   </style>
 </head>
+
 <body>
-  <h1>Stop Pleasing. Start Living.</h1><div class="nav" id="nav-buttons">
+  <h1>Stop Pleasing. Start Living.</h1>
+  
+  <div class="nav" id="nav-buttons">
   <button class="nav-btn" onclick="showSection('discipline', this)">🔥 Brutal Mode</button>
   <button class="nav-btn" onclick="showSection('calm', this)">🌿 Calm Mode</button>
   <button class="nav-btn" onclick="showSection('peoplepleasing', this)">🪞 Anti-People Pleasing</button>
@@ -72,8 +76,10 @@
   <button class="nav-btn" onclick="showSection('sayingNo', this)">⛔ Saying No</button>
   <button class="nav-btn" onclick="showSection('discomfort', this)">🧱 Discomfort is Necessary</button>
 </div>
+
+<button id="randomBtn" style="display: none;" onclick="showRandomQuote()">🎲 Random Quote</button>
+<p id="randomOutput" class="quote"></p>
       
-  
   <div id="peoplepleasing" class="section">
     <h2>🪞 Anti-People Pleasing Mode</h2>
     <ul>
@@ -86,7 +92,9 @@
       <li>Would the future me be proud of this moment?</li>
       <li>You said you wanted to change — so why are you still begging for approval?</li>
     </ul>
-  </div>  <div id="discipline" class="section">
+  </div>  
+  
+  <div id="discipline" class="section">
     <h2>🔥 Brutal Mode – The Discipline Slap</h2>
     <ul>
       <li>You're not tired. You're untrained.</li>
@@ -101,7 +109,9 @@
       <li>If someone watched your life right now, would they be inspired or embarrassed?</li>
       <li>You're not overwhelmed. You're undisciplined.</li>
     </ul>
-  </div>  <div id="calm" class="section">
+  </div>  
+  
+  <div id="calm" class="section">
     <h2>🌿 Calm Mode – Breathe and Refocus</h2>
     <ul>
       <li>Breathe. This moment is not the whole story.</li>
@@ -112,7 +122,9 @@
       <li>You’re doing better than you think.</li>
       <li>Your only job right now is to try again.</li>
     </ul>
-  </div>  <div id="understanding" class="section">
+  </div>  
+  
+  <div id="understanding" class="section">
     <h2>🧠 I Understand Everything</h2>
     <ul>
       <li>Then act like it. Knowing means nothing without action.</li>
@@ -121,7 +133,9 @@
       <li>If you really get it — then move like it.</li>
       <li>What are you doing with everything you know?</li>
     </ul>
-  </div>  <div id="lost" class="section">
+  </div>  
+  
+  <div id="lost" class="section">
     <h2>🙁 I Don’t Understand Anything</h2>
     <ul>
       <li>It’s okay to feel lost. Just don’t unpack and live there.</li>
@@ -130,7 +144,9 @@
       <li>Everything can be learned. Even this.</li>
       <li>Confusion is just the beginning of clarity.</li>
     </ul>
-  </div>  <div id="noNeedToUnderstand" class="section">
+  </div>  
+  
+  <div id="noNeedToUnderstand" class="section">
     <h2>💤 I Don’t Need to Understand Right Now</h2>
     <ul>
       <li>You don’t have to figure it all out right now.</li>
@@ -141,7 +157,9 @@
       <li>You are not late. You are not broken. You’re just <em>alive</em>.</li>
       <li>No more fixing — just feeling. That’s enough for today.</li>
     </ul>
-  </div>  <div id="rant" class="section">
+  </div>  
+  
+  <div id="rant" class="section">
     <h2>💢 Rant Mode – Let It Out</h2>
     <ul>
       <li>Say it. No one’s judging.</li>
@@ -157,51 +175,52 @@
   </div>  
   
   <div id="boundaries" class="section">
-  <h2>🚪 Boundaries – Protect Your Peace</h2>
-  <ul>
-    <li>Your time is a resource, not an obligation.</li>
-    <li>Boundaries are not walls. They are gates — and you choose who enters.</li>
-    <li>If they’re uncomfortable with your no, they were too comfortable with your silence.</li>
-    <li>Every yes without consent is a no to yourself.</li>
-    <li>Setting limits isn’t pushing people away — it’s keeping you intact.</li>
-    <li>What drains you isn’t worth preserving.</li>
-  </ul>
-</div>
+    <h2>🚪 Boundaries – Protect Your Peace</h2>
+    <ul>
+      <li>Your time is a resource, not an obligation.</li>
+      <li>Boundaries are not walls. They are gates — and you choose who enters.</li>
+      <li>If they’re uncomfortable with your no, they were too comfortable with your silence.</li>
+      <li>Every yes without consent is a no to yourself.</li>
+      <li>Setting limits isn’t pushing people away — it’s keeping you intact.</li>
+      <li>What drains you isn’t worth preserving.</li>
+    </ul>
+  </div>
 
-<div id="change" class="section">
-  <h2>🧬 Why I Changed</h2>
-  <ul>
-    <li>I changed because I was tired of surviving and wanted to live.</li>
-    <li>I changed because my silence was costing me peace.</li>
-    <li>I changed because the version they loved was burning me out.</li>
-    <li>This growth wasn’t easy, but staying broken was worse.</li>
-    <li>Change is not betrayal — it’s arrival.</li>
-    <li>If they don’t recognize me anymore, that’s okay. I finally do.</li>
-  </ul>
-</div>
+  <div id="change" class="section">
+    <h2>🧬 Why I Changed</h2>
+    <ul>
+      <li>I changed because I was tired of surviving and wanted to live.</li>
+      <li>I changed because my silence was costing me peace.</li>
+      <li>I changed because the version they loved was burning me out.</li>
+      <li>This growth wasn’t easy, but staying broken was worse.</li>
+      <li>Change is not betrayal — it’s arrival.</li>
+      <li>If they don’t recognize me anymore, that’s okay. I finally do.</li>
+    </ul>
+  </div>
 
-<div id="sayingNo" class="section">
-  <h2>⛔ Saying No – Without Guilt</h2>
-  <ul>
-    <li>No is a complete sentence.</li>
-    <li>Every no to them is a yes to me.</li>
-    <li>I’m allowed to say no without a reason, excuse, or smile.</li>
-    <li>I’m not being rude. I’m being real.</li>
-    <li>I don’t owe my energy to anyone who drains it.</li>
-    <li>Saying no is self-respect in action.</li>
-  </ul>
-</div>
-<div id="discomfort" class="section">
-  <h2>🧱 Discomfort is Necessary</h2>
-  <ul>
-    <li>Growth doesn't happen in comfort zones.</li>
-    <li>You don’t level up by staying safe.</li>
-    <li>If it scares you — that’s where the work is.</li>
-    <li>Discomfort is the doorway to your next version.</li>
-    <li>Comfort feels good now. Change feels better later.</li>
-    <li>This pain has purpose. Don’t run from it.</li>
-  </ul>
-</div>
+  <div id="sayingNo" class="section">
+    <h2>⛔ Saying No – Without Guilt</h2>
+    <ul>
+      <li>No is a complete sentence.</li>
+      <li>Every no to them is a yes to me.</li>
+      <li>I’m allowed to say no without a reason, excuse, or smile.</li>
+      <li>I’m not being rude. I’m being real.</li>
+      <li>I don’t owe my energy to anyone who drains it.</li>
+      <li>Saying no is self-respect in action.</li>
+    </ul>
+  </div>
+  
+  <div id="discomfort" class="section">
+    <h2>🧱 Discomfort is Necessary</h2>
+    <ul>
+      <li>Growth doesn't happen in comfort zones.</li>
+      <li>You don’t level up by staying safe.</li>
+      <li>If it scares you — that’s where the work is.</li>
+      <li>Discomfort is the doorway to your next version.</li>
+      <li>Comfort feels good now. Change feels better later.</li>
+      <li>This pain has purpose. Don’t run from it.</li>
+    </ul>
+  </div>
 
 <div class="section" style="display: block;">
     <h2>When You’re Done, Click:</h2>
@@ -210,21 +229,38 @@
 
 <script>
   function showSection(id, clickedButton) {
-    const sections = [
-      'discipline', 'calm', 'peoplepleasing', 'understanding', 
-      'lost', 'noNeedToUnderstand', 'rant', 'boundaries', 
-      'change', 'sayingNo', 'discomfort'
-    ];
-    
-    sections.forEach(section => {
-      document.getElementById(section).style.display = section === id ? 'block' : 'none';
-    });
+  const sections = [
+    'discipline', 'calm', 'peoplepleasing', 'understanding', 
+    'lost', 'noNeedToUnderstand', 'rant', 'boundaries', 
+    'change', 'sayingNo', 'discomfort'
+  ];
+  
+  sections.forEach(section => {
+    document.getElementById(section).style.display = section === id ? 'block' : 'none';
+  });
 
-    const allButtons = document.querySelectorAll('.nav-btn');
-    allButtons.forEach(btn => {
-      btn.style.display = btn === clickedButton ? 'inline-block' : 'none';
-    });
-  }
+  // Toggle visibility of nav buttons
+  const allButtons = document.querySelectorAll('.nav-btn');
+  allButtons.forEach(btn => {
+    btn.style.display = btn === clickedButton ? 'inline-block' : 'none';
+  });
+
+  // Show the random button and store current section
+  document.getElementById('randomBtn').style.display = 'inline-block';
+  document.getElementById('randomBtn').setAttribute('data-section', id);
+
+  // Clear previous random output
+  document.getElementById('randomOutput').textContent = '';
+}
+  
+  function showRandomQuote() {
+  const sectionId = document.getElementById('randomBtn').getAttribute('data-section');
+  const quotes = document.querySelectorAll(`#${sectionId} li`);
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const quoteText = quotes[randomIndex].innerText;
+
+  document.getElementById('randomOutput').textContent = `"${quoteText}"`;
+}
 </script>
-  </body>
+</body>
 </html>
