@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discipline Room –</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ff4d4d;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+    p, li {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    .quote {
+      color: #ccc;
+      font-style: italic;
+      margin-top: 30px;
+    }
+    button, .nav-btn {
+      background-color: #b30000;
+      color: white;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      margin: 10px 10px;
+    }
+    .section {
+      margin-top: 50px;
+      border-top: 1px solid #333;
+      padding-top: 30px;
+      display: none;
+    }
+    .nav {
+      margin-bottom: 30px;
+    }
+    textarea {
+      width: 80%;
+      height: 200px;
+      background-color: #1a1a1a;
+      color: #ff9999;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 15px;
+      font-family: 'Courier New', monospace;
+      font-size: 1em;
+      resize: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stop Pleasing. Start Living.</h1><div class="nav" id="nav-buttons">
+  <button class="nav-btn" onclick="showSection('discipline', this)">🔥 Brutal Mode</button>
+  <button class="nav-btn" onclick="showSection('calm', this)">🌿 Calm Mode</button>
+  <button class="nav-btn" onclick="showSection('peoplepleasing', this)">🪞 Anti-People Pleasing</button>
+  <button class="nav-btn" onclick="showSection('understanding', this)">🧠 Understanding Everything</button>
+  <button class="nav-btn" onclick="showSection('lost', this)">🙁 Not Understanding Anything</button>
+  <button class="nav-btn" onclick="showSection('noNeedToUnderstand', this)">💤 Not Having To Understand</button>
+  <button class="nav-btn" onclick="showSection('rant', this)">💢 Rant Mode</button>
+  <button class="nav-btn" onclick="showSection('boundaries', this)">🚪 Boundaries</button>
+  <button class="nav-btn" onclick="showSection('change', this)">🧬 Why I Changed</button>
+  <button class="nav-btn" onclick="showSection('sayingNo', this)">⛔ Saying No</button>
+  <button class="nav-btn" onclick="showSection('discomfort', this)">🧱 Discomfort is Necessary</button>
+</div>
+      
+  
+  <div id="peoplepleasing" class="section">
+    <h2>🪞 Anti-People Pleasing Mode</h2>
+    <ul>
+      <li class="quote">“You will never be enough for everyone — so be enough for yourself.”</li>
+      <li>Am I doing this for me, or to be liked?</li>
+      <li>Would I still do this if no one clapped?</li>
+      <li>Why am I betraying myself to keep others comfortable?</li>
+      <li>Whose voice is louder right now — mine or theirs?</li>
+      <li>If I keep putting them first, where do I end up?</li>
+      <li>Would the future me be proud of this moment?</li>
+      <li>You said you wanted to change — so why are you still begging for approval?</li>
+    </ul>
+  </div>  <div id="discipline" class="section">
+    <h2>🔥 Brutal Mode – The Discipline Slap</h2>
+    <ul>
+      <li>You're not tired. You're untrained.</li>
+      <li>This moment decides who you become.</li>
+      <li>Every excuse builds the life you hate.</li>
+      <li>No one’s impressed by almost doing it.</li>
+      <li>Discipline doesn’t care how you feel.</li>
+      <li>You’re wasting time someone else would die to have.</li>
+      <li>You’re not stuck — you’re just scared to move.</li>
+      <li>Are you really gonna scroll your dreams away?</li>
+      <li>You said you wanted it — so act like it.</li>
+      <li>If someone watched your life right now, would they be inspired or embarrassed?</li>
+      <li>You're not overwhelmed. You're undisciplined.</li>
+    </ul>
+  </div>  <div id="calm" class="section">
+    <h2>🌿 Calm Mode – Breathe and Refocus</h2>
+    <ul>
+      <li>Breathe. This moment is not the whole story.</li>
+      <li>One step forward still counts. You’re not behind.</li>
+      <li>Progress isn’t loud. Sometimes it’s silent and steady.</li>
+      <li>You’re allowed to go slow — just don’t stop.</li>
+      <li>Peace isn’t given. It’s chosen in hard moments.</li>
+      <li>You’re doing better than you think.</li>
+      <li>Your only job right now is to try again.</li>
+    </ul>
+  </div>  <div id="understanding" class="section">
+    <h2>🧠 I Understand Everything</h2>
+    <ul>
+      <li>Then act like it. Knowing means nothing without action.</li>
+      <li>Understanding is only power when you *use* it.</li>
+      <li>Don’t let your wisdom rot from inaction.</li>
+      <li>If you really get it — then move like it.</li>
+      <li>What are you doing with everything you know?</li>
+    </ul>
+  </div>  <div id="lost" class="section">
+    <h2>🙁 I Don’t Understand Anything</h2>
+    <ul>
+      <li>It’s okay to feel lost. Just don’t unpack and live there.</li>
+      <li>Start with one thing. One breath. One step.</li>
+      <li>You’re not broken — you’re just overwhelmed.</li>
+      <li>Everything can be learned. Even this.</li>
+      <li>Confusion is just the beginning of clarity.</li>
+    </ul>
+  </div>  <div id="noNeedToUnderstand" class="section">
+    <h2>💤 I Don’t Need to Understand Right Now</h2>
+    <ul>
+      <li>You don’t have to figure it all out right now.</li>
+      <li>Let it be unclear. Let yourself be human.</li>
+      <li>You can still breathe, rest, and continue — without a plan.</li>
+      <li>It’s okay to not understand everything. It’s not your job today.</li>
+      <li>All you have to do is exist. That’s already enough.</li>
+      <li>You are not late. You are not broken. You’re just <em>alive</em>.</li>
+      <li>No more fixing — just feeling. That’s enough for today.</li>
+    </ul>
+  </div>  <div id="rant" class="section">
+    <h2>💢 Rant Mode – Let It Out</h2>
+    <ul>
+      <li>Say it. No one’s judging.</li>
+      <li>Yeah, it sucks. You don’t have to pretend it doesn’t.</li>
+      <li>You can hate everything for a moment. It won’t break you.</li>
+      <li>This is your space. You don’t owe grace right now.</li>
+      <li>You’re not too much. You’re just full.</li>
+      <li>You don’t have to be nice here.</li>
+    </ul>
+    <textarea placeholder="Write it all here. Scream it if you need to. This space is yours."></textarea>
+    <br />
+    <button onclick="document.querySelector('#rant textarea').value = ''">🧹 Clear it</button>
+  </div>  
+  
+  <div id="boundaries" class="section">
+  <h2>🚪 Boundaries – Protect Your Peace</h2>
+  <ul>
+    <li>Your time is a resource, not an obligation.</li>
+    <li>Boundaries are not walls. They are gates — and you choose who enters.</li>
+    <li>If they’re uncomfortable with your no, they were too comfortable with your silence.</li>
+    <li>Every yes without consent is a no to yourself.</li>
+    <li>Setting limits isn’t pushing people away — it’s keeping you intact.</li>
+    <li>What drains you isn’t worth preserving.</li>
+  </ul>
+</div>
+
+<div id="change" class="section">
+  <h2>🧬 Why I Changed</h2>
+  <ul>
+    <li>I changed because I was tired of surviving and wanted to live.</li>
+    <li>I changed because my silence was costing me peace.</li>
+    <li>I changed because the version they loved was burning me out.</li>
+    <li>This growth wasn’t easy, but staying broken was worse.</li>
+    <li>Change is not betrayal — it’s arrival.</li>
+    <li>If they don’t recognize me anymore, that’s okay. I finally do.</li>
+  </ul>
+</div>
+
+<div id="sayingNo" class="section">
+  <h2>⛔ Saying No – Without Guilt</h2>
+  <ul>
+    <li>No is a complete sentence.</li>
+    <li>Every no to them is a yes to me.</li>
+    <li>I’m allowed to say no without a reason, excuse, or smile.</li>
+    <li>I’m not being rude. I’m being real.</li>
+    <li>I don’t owe my energy to anyone who drains it.</li>
+    <li>Saying no is self-respect in action.</li>
+  </ul>
+</div>
+<div id="discomfort" class="section">
+  <h2>🧱 Discomfort is Necessary</h2>
+  <ul>
+    <li>Growth doesn't happen in comfort zones.</li>
+    <li>You don’t level up by staying safe.</li>
+    <li>If it scares you — that’s where the work is.</li>
+    <li>Discomfort is the doorway to your next version.</li>
+    <li>Comfort feels good now. Change feels better later.</li>
+    <li>This pain has purpose. Don’t run from it.</li>
+  </ul>
+</div>
+
+<div class="section" style="display: block;">
+    <h2>When You’re Done, Click:</h2>
+    <button onclick="alert('Good. Now do it again tomorrow.')">I'm Done Pleasing. I’m Back.</button>
+  </div>  
+
+<script>
+  function showSection(id, clickedButton) {
+    const sections = [
+      'discipline', 'calm', 'peoplepleasing', 'understanding', 
+      'lost', 'noNeedToUnderstand', 'rant', 'boundaries', 
+      'change', 'sayingNo', 'discomfort'
+    ];
+    
+    sections.forEach(section => {
+      document.getElementById(section).style.display = section === id ? 'block' : 'none';
+    });
+
+    const allButtons = document.querySelectorAll('.nav-btn');
+    allButtons.forEach(btn => {
+      btn.style.display = btn === clickedButton ? 'inline-block' : 'none';
+    });
+  }
+</script>
+  </body>
+</html>
